@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import styles from './index.module.css';
 
 export default class List extends React.Component {
   constructor(props) {
@@ -38,19 +38,19 @@ export default class List extends React.Component {
     }
 
     return (
-      <div className='item'>
+      <div className={styles['item']}>
         <input
-          className='item-checkbox'
+          className={styles['item-checkbox']}
           type='checkbox'
           onChange={this.check}
           value={!this.state.finished}>
         </input>
         <div
-          className={this.state.finished ? 'finished-item-name' : 'item-name'}
+          className={this.state.finished ? styles['finished-item-name'] : styles['item-name']}
         >
           {item.name}
         </div>
-        <div className='list-time'>
+        <div className={styles['list-time']}>
           {hours + ':' + minutes + ' ' + meridiem}
         </div>
       </div>

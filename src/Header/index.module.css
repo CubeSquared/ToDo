@@ -1,0 +1,46 @@
+.header {
+  height: 102px;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.header-date-wrapper {
+  margin-left: 26px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 26px;
+}
+
+.header-inner-date-wrapper {
+  display: flex;
+}
+
+.header-day {
+  font-size: 26px;
+  font-weight: bold;
+  color: #4C9CEC;
+}
+
+.header-date {
+  font-size: 26px;
+  margin-left: 2px;
+  color: #4C9CEC;
+}
+
+.header-month {
+  color: #d3d3d3;
+  margin-top: 12px;
+}
+
+.number-of-tasks {
+  font-size: 14px;
+  color: #d3d3d3;
+  margin-left: auto;
+  margin-right: 26px;
+  margin-top: 26px;
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+}

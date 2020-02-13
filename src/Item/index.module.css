@@ -1,0 +1,32 @@
+.item {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content:
+}
+
+.item-checkbox {
+  margin-left: 26px;
+  margin-right: 26px;
+}
+
+.item-name {
+  font-family: sans-serif;
+  color: #838383;
+}
+
+.finished-item-name {
+  font-family: sans-serif;
+  color: #d3d3d3;
+  text-decoration: line-through;
+}
+
+.list-time {
+  margin-left: auto;
+  margin-right: 26px;
+  font-family: sans-serif;
+  color: #d3d3d3;
+  font-size: 12px;
+}

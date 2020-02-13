@@ -1,0 +1,41 @@
+.popup {
+  position: absolute;
+  margin-top: 30px;
+  width: 275px;
+  height: 118px;
+  border: 2px solid #d3d3d3;
+  border-radius: 6px;
+  background-color: white;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 26px;
+}
+
+.popup-flex {
+  display: flex;
+  margin-left: 26px;
+  margin-bottom: 8px;
+}
+
+.popup-label {
+  color: #838383;
+  width: 48px;
+}
+
+.popup-input {
+  color: #838383;
+  font-family: sans-serif;
+}
+
+.submit-button {
+  width: 80px;
+  height: 30px;
+  background-color: #4C9CEC;
+  margin-left: 26px;
+  margin-top: 8px;
+  border-radius: 4px;
+  border: 1px solid #4C9CEC;
+  color: white;
+  outline: none;
+}

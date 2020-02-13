@@ -1,0 +1,25 @@
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  min-height: 400px;
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: white;
+  margin-top: 36px;
+}
+
+.create-item {
+  width: 48px;
+  height: 48px;
+  background-color: #F75B48;
+  border: 1px solid #F75B48;
+  border-radius: 50%;
+  position: absolute;
+  right: 26px;
+  top: 78px;
+  color: white;
+  font-size: 22px;
+  outline: none;
+}
