@@ -16,22 +16,42 @@ export default class List extends React.Component {
 
   render() {
     const item = this.props.item;
-    let date = new Date(item.date)
+    const time = item.time.split(':');
+    let meridiem = 'PM';
+    let hours = parseInt(time[0]);
+    let minutes = time[1];
+
+    if (isNaN(hours)) {
+      hours = 0;
+    }
+    if (isNaN(minutes)) {
+      minutes = '00';
+    }
+
+    if (hours === 0) {
+      meridiem = 'AM';
+      hours = 12;
+    } else if (hours < 12) {
+      meridiem = 'AM'
+    } else if (hours > 12){
+      hours -= 12;
+    }
 
     return (
       <div className='item'>
         <input
+          className='item-checkbox'
           type='checkbox'
           onChange={this.check}
           value={!this.state.finished}>
         </input>
         <div
-          style={this.state.finished ? {textDecoration: 'line-through'} : undefined}
+          className={this.state.finished ? 'finished-item-name' : 'item-name'}
         >
           {item.name}
         </div>
-        <div>
-          {date.getUTCHours() + ':' + date.getUTCMinutes()}
+        <div className='list-time'>
+          {hours + ':' + minutes + ' ' + meridiem}
         </div>
       </div>
     );
